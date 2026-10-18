@@ -137,33 +137,109 @@
             height: auto;
         }
 
-        /* PHONE-SIZED SCREENS */
-        @media screen and (max-width: 600px) {
-            body {
-                padding: 8px;
-                font-size: 12px;
-            }
+    
+        * {
+    box-sizing: border-box;
+}
 
-            .logo {
-                width: 100%;
-                max-width: 100%;
-            }
+html {
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+}
 
-            .tagline {
-                font-size: 15px;
-                margin: 10px 0 14px;
-            }
+body {
+    max-width: 100%;
+    margin: 0;
+    padding: 10px;
+}
 
-            .navbar {
-                gap: 6px;
-                padding: 6px 0;
-            }
+/* Keep images and logo inside the screen */
+img {
+    max-width: 100%;
+    height: auto;
+}
 
-            .navbar a {
-                padding: 7px 9px;
-                font-size: 14px;
-            }
-        }
+/* Allow navigation buttons to wrap onto multiple lines */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    max-width: 100%;
+}
+
+.navbar a {
+    max-width: 100%;
+    text-align: center;
+}
+
+/* Make tables scroll horizontally when necessary */
+div[style*="overflow-x:auto"] {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Adjust everything for phones */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    p, li {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .navbar {
+        gap: 4px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+        padding: 7px 8px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 3px 4px;
+    }
+}
+
+/* Extra-small phones */
+@media screen and (max-width: 380px) {
+    h1 {
+        font-size: 21px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+
+
     </style>
 </head>
 
@@ -197,6 +273,6 @@
     <hr>
 
     <!-- HOMEPAGE CONTENT GOES BELOW -->
-
+Hello
 </body>
 </html>
