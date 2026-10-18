@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Truly Tarantulas</title>
+
+    <style>
+        /* GENERAL PAGE STYLING */
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            width: 100%;
+            margin: 0;
+        }
+
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 10px;
+            background-color: #000000;
+            color: #F2E8D5;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        /* LOGO */
+        .logo {
+            display: block;
+            width: 100%;
+            max-width: 650px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        /* TAGLINE */
+        .tagline {
+            text-align: center;
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 1.5;
+            margin: 6px 0 20px;
+        }
+
+        /* NAVIGATION CONTAINER */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 3px;
+
+            width: 100%;
+            padding: 4px 0;
+            margin: 0;
+
+            background: transparent;
+            border: none;
+        }
+
+        /* INDIVIDUAL NAVIGATION BUTTONS */
+        .navbar a {
+            display: inline-block;
+            flex: 0 1 auto;
+            max-width: 100%;
+
+            padding: 4px 6px;
+
+            color: #D9B96E;
+            background: linear-gradient(
+                180deg,
+                #781C2C 0%,
+                #58101E 50%,
+                #300810 100%
+            );
+
+            border: 3px double #C6A15B;
+            border-radius: 0;
+            box-shadow: none;
+
+            font-family: "Times New Roman", Times, serif;
+            font-size: 16px;
+            font-weight: normal;
+            text-align: center;
+            text-decoration: none;
+            overflow-wrap: anywhere;
+            transition: background 0.3s ease,
+                        color 0.3s ease;
+        }
+
+        /* BUTTON HOVER */
+        .navbar a:hover {
+            color: #FFE6A0;
+
+            background: linear-gradient(
+                180deg,
+                #A52A40 0%,
+                #681525 50%,
+                #400B17 100%
+            );
+
+            border-color: #F0D38A;
+        }
+
+        /* HIDE CURRENT PAGE BUTTON */
+        .navbar a.current-page {
+            display: none;
+        }
+
+        /* DIVIDER */
+        hr {
+            border: none;
+            border-top: 1px solid #C6A15B;
+            margin: 18px 0;
+        }
+
+        /* TABLES */
+        .table-wrapper,
+        .table-container {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* PHONE-SIZED SCREENS */
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 8px;
+                font-size: 12px;
+            }
+
+            .logo {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .tagline {
+                font-size: 15px;
+                margin: 10px 0 14px;
+            }
+
+            .navbar {
+                gap: 6px;
+                padding: 6px 0;
+            }
+
+            .navbar a {
+                padding: 7px 9px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- WEBSITE LOGO -->
+    <header>
+        <img
+            src="LOGOPHOTO.jpeg"
+            alt="Truly Tarantulas Logo"
+            class="logo"
+        >
+
+        <p class="tagline">
+            Canada's best selection of captive bred Arachnids
+            from across the globe
+        </p>
+    </header>
+
+    <!-- NAVIGATION MENU -->
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html" class="current-page">Home</a>
+        <a href="inventory.html">Tarantulas &amp; Other Spiders</a>
+        <a href="about.html">Scorpions</a>
+        <a href="care-guides.html">Other Invertebrates</a>
+        <a href="contact.html">Reptiles</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html">Terms</a>
+    </nav>
+
+    <hr>
+
+    <!-- HOMEPAGE CONTENT GOES BELOW -->
+
+</body>
+</html>
