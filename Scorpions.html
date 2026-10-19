@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Truly Tarantulas</title>
+
+    <style>
+        /* GENERAL PAGE STYLING */
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            width: 100%;
+            margin: 0;
+        }
+
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 10px;
+            background-color: #000000;
+            color: #cebb83;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        /* LOGO */
+        .logo {
+            display: block;
+            width: 100%;
+            max-width: 650px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        /* TAGLINE */
+        .tagline {
+            text-align: center;
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 1.5;
+            margin: 6px 0 20px;
+        }
+
+        /* NAVIGATION CONTAINER */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 3px;
+
+            width: 100%;
+            padding: 4px 0;
+            margin: 0;
+
+            background: transparent;
+            border: none;
+        }
+
+        /* INDIVIDUAL NAVIGATION BUTTONS */
+        .navbar a {
+            display: inline-block;
+            flex: 0 1 auto;
+            max-width: 100%;
+
+            padding: 4px 6px;
+
+            color: #D9B96E;
+            background: linear-gradient(
+                180deg,
+                #781C2C 0%,
+                #58101E 50%,
+                #300810 100%
+            );
+
+            border: 3px double #C6A15B;
+            border-radius: 0;
+            box-shadow: none;
+
+            font-family: "Times New Roman", Times, serif;
+            font-size: 16px;
+            font-weight: normal;
+            text-align: center;
+            text-decoration: none;
+            overflow-wrap: anywhere;
+            transition: background 0.3s ease,
+                        color 0.3s ease;
+        }
+
+        /* BUTTON HOVER */
+        .navbar a:hover {
+            color: #FFE6A0;
+
+            background: linear-gradient(
+                180deg,
+                #A52A40 0%,
+                #681525 50%,
+                #400B17 100%
+            );
+
+            border-color: #F0D38A;
+        }
+
+        /* HIDE CURRENT PAGE BUTTON */
+        .navbar a.current-page {
+            display: none;
+        }
+
+        /* DIVIDER */
+        hr {
+            border: none;
+            border-top: 1px solid #C6A15B;
+            margin: 18px 0;
+        }
+
+        /* TABLES */
+        .table-wrapper,
+        .table-container {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        table {
+            border-collapse: seperate;
+            
+
+
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+    
+        * {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    max-width: 100%;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Keep images and logo inside the screen */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Allow navigation buttons to wrap onto multiple lines */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2px;
+    max-width: 100%;
+}
+
+.navbar a {
+    max-width: 100%;
+    text-align: center;
+}
+
+/* Make tables scroll horizontally when necessary */
+div[style*="overflow-x:auto"] {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Adjust everything for phones */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 1px;
+        font-size: 11px;
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 8px;
+    }
+
+    h3 {
+        font-size: 6px;
+    }
+
+    p, li {
+        font-size: 11px;
+    }
+
+    .logo {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .navbar {
+        gap: 1px;
+    }
+
+    .navbar a {
+        font-size: 9px;
+        padding: 2px 2px;
+    }
+
+    table {
+        font-size: 11px;
+    }
+
+    th, td {
+        padding: 1px 2px;
+    }
+}
+/* Adjust table spacing on mobile phones only */
+@media screen and (max-width: 600px) {
+    table th,
+    table td {
+        line-height: 1.2;
+    }
+}
+
+/* Extra-small phones */
+@media screen and (max-width: 380px) {
+    h1 {
+        font-size: 8px;
+    }
+
+    .navbar a {
+        font-size: 8px;
+        padding: 1px;
+    }
+}
+
+
+a {
+    color: #890000;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #b12900;
+    text-decoration: underline;
+}
+
+
+    </style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+    <!-- WEBSITE LOGO -->
+    <header>
+        <img
+            src="LOGOPHOTO.jpeg"
+            alt="Truly Tarantulas Logo"
+            class="logo"
+        >
+
+        <center><p>
+            Canada's best selection of captive bred Arachnids
+            from across the globe
+        </p></center>
+    </header>
+
+    <!-- NAVIGATION MENU -->
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="Spiders.html">Tarantulas &amp; Other Spiders</a>
+        <a href="Scorpions.html" class="current-page">Scorpions</a>
+        <a href="care-guides.html">Other Invertebrates</a>
+        <a href="contact.html">Reptiles</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html">Terms</a>
+    </nav>
+<hr>
+
+    <!-- HOMEPAGE CONTENT GOES BELOW -->
+
+<center><font size="5" color="White">
+<u>Scorpions: </u>
+</font></center><br><br>
+
+
+
+<Center><table border="1" cellpadding="4" cellspacing="0">
+    <tr>
+    <td>Species</td>
+    <td>Description</td>
+    <td>Price</td>
+    </tr>
+    <tr>
+       <td>Black Fat-Tail Scorpion<br>(<i>Androctonus bicolor</i>)</td>
+<td>LT 2"- 3"<br></td>
+<td>$75</td>
+
+    <tr>
+       <td>Edward's Bark Scorpion<br>(<i>Centruroides edwardsii</i>)</td>
+<td>ST 2"- 3"<br>ST 2"- 3"<br>ST 2"- 3"<br>ST 3"- 3½" Males (Subadults-adults)<br>ST 3"- 3½" Females (Subadults-adults)<br>ST 3"- 3½" Pairs (Subadults-adults)<br>ST 3"- 3½" Trios (1.2 Subadults-adults)<br></td>
+<td>$65<br>$250<br>$400<br>$65<br>$75<br>$125<br>$165<br></td>
+
+<tr>
+       <td>Stockmann's Bush Scorpion<br>(<i>Chaerilus stockmannorum</i>)</td>
+<td>1"+<br></td>
+<td>$70</td>
+
+<tr>
+<td>Arizona Giant Desert Hairy Scorpion<br>(<i>Hadrurus arizonensis</i>)</td>
+<td>ST 3"- 5" (Subadults-adults)<br></td>
+<td>$75</td>
+</tr>
+</tr>
+<td>Cameroon Dictator Scorpion<br>(<i>Pandinus dictator</i>)*</td>
+<td>1½"<br>2"<br>MT 2"+<br>MT 3"+<br>MT 4"+<br>MT 5"- 7"+ (Subadults-adults)<br>MT 6"- 7"+ Females (Adults)</td>
+<td>$90<br>$100<br>$90<br>$110<br>$130<br>$200<br>$220</td>
+</tr>
+
+</table></Center>
+<br><br><br>
+
+<center>LEGEND:<br>
+All animals are captive bred unless listed as:<br>
+ST (Short Term) - recent to four months in captivity.<br>
+MT (Mid-term) - four to eight months in captivity.<br>
+LT (Long Term) - 12+ months in captivity.<br>
+CITES - CITES documentation required for export outside of Canada.<Br><br><br>
+    <font color="white"> Page last updated: October 11th, 2026.</font><br>
+
+<hr>
+<!-- NAVIGATION MENU -->
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="Spiders.html">Tarantulas &amp; Other Spiders</a>
+        <a href="Scorpions.html">Scorpions</a>
+        <a href="care-guides.html">Other Invertebrates</a>
+        <a href="contact.html">Reptiles</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html">Terms</a>
+    </nav><br>
+    Copyright © 2022-2026 Truly Tarantulas
+<hr>
+
+
+
+
+
+</center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
