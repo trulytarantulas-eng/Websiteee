@@ -222,7 +222,16 @@ div[style*="overflow-x:auto"] {
     }
 
     th, td {
-        padding: 1px 1px;
+        padding: 2px 2px;
+    }
+}
+/* Adjust table spacing on mobile phones only */
+@media screen and (max-width: 600px) {
+    table th,
+    table td {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        line-height: 1.2;
     }
 }
 
